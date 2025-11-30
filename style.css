@@ -1,0 +1,78 @@
+html {
+  direction: rtl;
+}
+body {
+  font-family: Tahoma, sans-serif;
+  background-color: #f7f9fc;
+  margin: 0;
+  color: #222;
+}
+
+/* سربرگ */
+.site-header {
+  background: #0a4a8e;
+  color: #fff;
+  padding: 20px 16px;
+  text-align: center;
+}
+.site-header h1 {
+  margin: 0;
+  font-size: 1.6rem;
+}
+
+/* چیدمان اصلی */
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  padding: 16px;
+}
+
+/* باکس‌ها */
+.box {
+  background: #e9f1ff;
+  border-radius: 10px;
+  padding: 16px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.06);
+}
+.box h2 {
+  margin-top: 0;
+  color: #0a4a8e;
+  font-size: 1.2rem;
+}
+
+/* لیست اطلاعیه‌ها */
+.notices {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.notices li {
+  background: #fff;
+  border: 1px solid #e6edf7;
+  margin-bottom: 8px;
+  padding: 10px 12px;
+  border-radius: 8px;
+}
+.notices li strong {
+  color: #0a4a8e;
+}
+
+/* پابرگ */
+.site-footer {
+  background: #eef2f7;
+  text-align: center;
+  padding: 12px;
+  margin-top: 8px;
+  font-size: 0.95rem;
+}
+.site-footer strong {
+  color: #0a4a8e;
+}
+
+/* واکنش‌گرا برای موبایل */
+@media (max-width: 768px) {
+  .container {
+    grid-template-columns: 1fr;
+  }
+}
